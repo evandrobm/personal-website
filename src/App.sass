@@ -1,16 +1,41 @@
 @charset "utf-8"
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700')
+@import url('https://fonts.googleapis.com/css?family=Rubik')
 
 // Set your brand colors
+$primary: #431c5d
+$secondary: #cdd422
+$contrast: #e05915
+$coral: #FF6F61
 
+$cold1: #bccdbe
+$cold2: #c2dde6
+$cold3: #e6e9f0
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif
+$family-sans-serif: "Rubik", sans-serif
 
 
 // Update some of Bulma's component variables
 
-  
+
 @import "../node_modules/bulma/bulma.sass"
+
+*
+  text-rendering: optimizeLegibility !important
+  -webkit-font-smoothing: antialiased !important
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+.App
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  .body
+    flex: 1
+  #main-header, #main-footer
+    height: 100px
+    // width: 100%
+    background: $primary
+    color: $secondary
+    padding: 10px
