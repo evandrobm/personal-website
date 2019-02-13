@@ -1,10 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./styles.sass";
+import './styles.sass';
 
 class Splash extends Component {
+  color = '#fff';
+
   render() {
-    return <section className="splash">Splash</section>;
+    return (
+      <section className="splash">
+        <div className="banner" />
+      </section>
+    );
   }
 }
 

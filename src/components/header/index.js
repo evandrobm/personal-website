@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./styles.sass";
+import './styles.sass';
 
 const Header = () => <header id="main-header">Header</header>;
 
